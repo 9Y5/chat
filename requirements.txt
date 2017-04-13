@@ -1,0 +1,2 @@
+flatbuffers==2015.12.22.1
+websockets==3.2

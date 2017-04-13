@@ -1,0 +1,37 @@
+namespace stanzas;
+
+enum MessageType:byte { Chat = 1, Error, GroupChat, Headline, Normal }
+
+enum ChatState:byte { Active = 1, Inactive, Gone, Composing, Paused }
+
+enum DeliveryStatus:byte { Pending = 1, Sent, Delivered }
+
+enum Receipt:bool { Request, Received }
+
+table Message {
+  id:string;
+  sender:string;
+  to:string;
+  type:MessageType = Chat;
+  body:string;
+  chatstate:ChatState = Active;
+  received:bool = false;
+  delivered:bool = false;
+  receipt:Receipt;
+}
+
+table Presence {
+  type:string;
+}
+
+table Stanza {
+  message:Message;
+  presence:Presence;
+}
+
+table Auth {
+  username:string;
+  channel:string;
+}
+
+root_type Stanza;

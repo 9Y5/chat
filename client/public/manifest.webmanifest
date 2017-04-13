@@ -1,0 +1,11 @@
+{
+  "name": "YSChat",
+  "short_name": "YSChat",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple chat application.",
+  "icons": [{
+  }],
+  "theme_color": "#28004D"
+}

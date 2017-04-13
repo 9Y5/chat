@@ -1,0 +1,146 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 5vh;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  max-height: 8vh;
+}
+
+.App-body {
+  height: 92vh;
+  overflow: scroll;
+}
+
+.App-intro {
+  font-size: large;
+  flex: 1;
+  /*background: #fafafa;*/
+  margin-bottom: 0;
+}
+
+.App-footer {
+  height: 8vh;
+}
+
+.App-chat-input {
+  background-color: #fff;
+  padding: 0;
+}
+
+
+.App-chat-bubble-shape {
+  border-radius: 7px;
+  box-shadow: 2px 1px 3px -1px rgba(148,148,148,0.2);
+  padding: 0;
+}
+
+.App-headline {
+  margin: 0 auto;
+  padding: 1px 7px;
+  font-size: 0.8em;
+  background: #c5e8f6;
+  max-width: fit-content;
+  color: #555;
+}
+
+.App-credits {
+  font-size: 1rem;
+}
+
+.App-chat-input *:focus {
+  border: 0.1rem solid black;
+  outline: 0;
+}
+
+.full-page-bg {
+  /*background: #172122 url("/galaxy.jpg") no-repeat center center fixed;*/
+  background-color: #172122;
+  background-size: cover;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.registration-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.registration-form div {
+  flex: none;
+  max-width: 360px;
+}
+
+.chat-input-notification {
+  background: rgba(0,0,0, 0.7);
+  border-radius: 13px;
+  padding: 3px 13px;
+  color: white;
+  display: block;
+  margin: 7px 0px;
+  font-size: 1.2rem;
+}
+
+.send-button {
+  text-align: left;
+  border: 0;
+  width: 100%;
+}
+
+.send-button:hover {
+  background: none;
+}
+
+.chat-input {
+  border: 0.1rem solid #fff;
+  border-radius: 3px;
+  height: 40px;
+}
+
+.chat-input input[type=text] {
+  border: none;
+  padding-left: 1.5em;
+}
+
+.chat-input input[type=text]:focus {
+  border: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.5);
+}
+
+.sidemenu {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background: rgba(0,0,0,0.8);
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
